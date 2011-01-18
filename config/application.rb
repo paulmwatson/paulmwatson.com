@@ -38,5 +38,9 @@ module Pmw
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # Heroku logging: http://docs.heroku.com/logging
+    config.logger    = Logger.new(STDOUT)
+    config.log_level = :info
   end
 end
