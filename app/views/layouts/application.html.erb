@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Pmw</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head lang="<%= I18n.locale %>">
+    <title><%= t :sub_title, :scope => :site %> - <%= t :title, :scope => [:site] %></title>
+    <meta charset="<%= Encoding.default_external.name %>">
+    <%= stylesheet_link_tag :all, :cache => true %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <%= yield %>
+    <footer>
+      <p><time datetime="2011-01-19" pubdate>January 19, 2011</time></p>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-265441-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>
