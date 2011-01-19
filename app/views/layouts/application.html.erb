@@ -2,7 +2,7 @@
   <head lang="<%= I18n.locale %>">
     <title><%= t :sub_title, :scope => :site %> - <%= t :title, :scope => [:site] %></title>
     <meta charset="<%= Encoding.default_external.name %>">
-    <%= stylesheet_link_tag 'base', :cache => true %>
+    <%= stylesheet_link_tag 'base' %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tag %>
   </head>
