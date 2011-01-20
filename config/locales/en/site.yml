@@ -2,4 +2,4 @@ en:
   site:
     title: "Paul M. Watson"
     sub_title: "Freelance Web Developer in Ireland"
-    notice: 'I am rebuilding this site live, every code change pushed live, warts and all. Follow along on <a href="https://%{url}">%{url}</a>'
+    notice: 'I am rebuilding this site live, every code change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'

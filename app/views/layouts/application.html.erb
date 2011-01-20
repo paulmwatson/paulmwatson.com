@@ -2,15 +2,17 @@
   <head lang="<%= I18n.locale %>">
     <title><%= t :sub_title, :scope => :site %> - <%= t :title, :scope => [:site] %></title>
     <meta charset="<%= Encoding.default_external.name %>">
-    <%= stylesheet_link_tag 'base' %>
-    <%= javascript_include_tag 'application' %>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <%= stylesheet_link_tag 'reset', 'base' %>
+    <%= javascript_include_tag 'head.min' %>
     <%= csrf_meta_tag %>
   </head>
   <body>
     <%= yield %>
     <footer>
-      <p><time datetime="2011-01-19" pubdate>January 19, 2011</time></p>
+      <p>Updated <time datetime="2011-01-19" pubdate>January 19, 2011</time></p>
     </footer>
+    <%= headjs_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', 'jquery.backstretch.min', 'application' %>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-265441-2']);

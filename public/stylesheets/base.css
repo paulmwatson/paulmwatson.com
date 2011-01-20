@@ -1,6 +1,63 @@
+html, body
+{
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+a
+{
+  color: #eee;
+}
+
+a:visited
+{
+  color: #eee;
+}
+
 .notice
 {
   background-color: #fc0;
-  padding: 5px;
+  color: #000;
+  font-size: 0.8em;
+  padding: 0.2em 0.4em;
+  position: absolute;
+  right: 0;
+  top: 0;
   text-align: center;
+  border-bottom-left-radius: 4px;
+}
+
+.notice a
+{
+  color: #000;
+}
+
+footer
+{
+  bottom: 0.5em;
+  opacity: 0.5;
+  position: absolute;
+  right: 0.5em;
+}
+
+article.about
+{
+  font-size: 1.2em;
+  margin: 1em;
+  padding: 1em;
+}
+
+article.about nav
+{
+  bottom: 2em;
+  position: absolute;
+}
+
+article.about h1
+{
+  font-size: 2em;
+  font-weight: normal;
 }
