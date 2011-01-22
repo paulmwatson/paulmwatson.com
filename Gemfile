@@ -1,8 +1,12 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
-gem 'headjs-rails'
 gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'jammit-s3'
+
+group :development do
+  gem 'heroku-rails'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
