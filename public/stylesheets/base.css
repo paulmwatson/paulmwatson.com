@@ -2,8 +2,9 @@ html, body
 {
   color: #fff;
   font-family: Helvetica, sans-serif;
-  line-height: 1.5em;
+  line-height: 1.6em;
   letter-spacing: 1px;
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -26,7 +27,8 @@ a:visited
 {
   background-color: #fc0;
   color: #000;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  line-height: 1.3em;
   padding: 0.2em 0.4em;
   position: absolute;
   right: 0;
@@ -61,8 +63,24 @@ article.about nav
   position: absolute;
 }
 
-article.about h1
+article.about header
 {
-  font-size: 2em;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+article.about header h1
+{
   font-weight: normal;
+}
+
+article.about header p
+{
+  font-size: 0.5em;
+  line-height: 1em;
+}
+
+article.about nav li
+{
+  text-shadow: -1px -1px 1px #666;
 }

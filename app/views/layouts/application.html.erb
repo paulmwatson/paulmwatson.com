@@ -2,8 +2,10 @@
   <head lang="<%= I18n.locale %>">
     <title><%= t :sub_title, :scope => :site %> - <%= t :title, :scope => [:site] %></title>
     <meta charset="<%= Encoding.default_external.name %>">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <%= stylesheet_link_tag 'reset', 'base' %>
+    <%= stylesheet_link_tag 'mobile', :media => 'screen and (max-device-width: 480px)' %>
     <%= javascript_include_tag 'head.min' %>
     <%= csrf_meta_tag %>
   </head>

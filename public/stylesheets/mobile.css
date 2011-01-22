@@ -1,0 +1,37 @@
+.notice
+{
+  position: relative;
+  border-bottom-left-radius: 0;
+}
+
+article.about
+{
+  margin: 0.3em;
+  padding: 0.3em;
+}
+
+article.about header
+{
+  font-size: 2.2em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+article.about nav
+{
+  bottom: auto;
+  position: relative;
+}
+
+article.about nav li
+{
+  text-shadow: -1px -1px 1px #666;
+}
+
+footer
+{
+  bottom: auto;
+  position: relative;
+  right: auto;
+  text-align: center;
+}
