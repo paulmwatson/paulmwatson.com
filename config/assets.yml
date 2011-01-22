@@ -1,0 +1,17 @@
+use_cloudfront: true
+cloudfront_domain: d55udxcumsrf1.cloudfront.net
+s3_bucket: paulmwatson
+s3_permission: public_read
+s3_access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+s3_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+
+javascripts:
+  common:
+    - public/javascripts/jquery.backstretch.js
+    - public/javascripts/application.js
+
+stylesheets:
+  common:
+    - public/stylesheets/reset.css
+    - public/stylesheets/base.css
+    - public/stylesheets/mobile.css
