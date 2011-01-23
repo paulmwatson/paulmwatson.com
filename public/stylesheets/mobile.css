@@ -14,9 +14,19 @@
 
   article.about header
   {
-    font-size: 2.2em;
+    font-size: 1.6em;
     margin-bottom: 1em;
     margin-top: 0.5em;
+  }
+  
+  article.about header p
+  {
+    font-size: 0.6em;
+  }
+  
+  article.about header .photo
+  {
+    margin-right: 0.3em;
   }
 
   article.about nav
