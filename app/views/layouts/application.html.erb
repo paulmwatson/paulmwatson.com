@@ -2,6 +2,15 @@
   <head lang="<%= I18n.locale %>">
     <title><%= t :sub_title, :scope => :site %> - <%= t :title, :scope => [:site] %></title>
     <meta charset="<%= Encoding.default_external.name %>">
+
+    <meta property="og:title" content="<%= t :sub_title, :scope => :site %> - <%= t :title, :scope => [:site] %>"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://<%= request.host %>/"/>
+    <meta property="og:image" content="http://d55udxcumsrf1.cloudfront.net/images/avatar_75x75.jpg"/>
+    <meta property="og:site_name" content="<%= t :title, :scope => [:site] %>">
+    <meta property="fb:admins" content="<%= t :fbid, :scope => [:site] %>">
+    <meta property="og:description" content="<%= t :description, :scope => [:site] %>">
+                   
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <%= include_stylesheets :common, :media => 'screen' %>
@@ -14,6 +23,7 @@
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
     <%= include_javascripts :common %>
+    <%- if (Rails.env.production?) -%>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-265441-2']);
@@ -24,5 +34,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    <%- end -%>
   </body>
 </html>

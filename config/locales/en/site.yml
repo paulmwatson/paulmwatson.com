@@ -3,3 +3,5 @@ en:
     title: "Paul M. Watson"
     sub_title: "Freelance Web Developer & Designer in Ireland"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
+    fbid: 142794555777995
+    description: 'The website of Paul M. Watson, a freelance web developer and designer in Ireland. Specialising in Ruby on Rails, HTML5, CSS3, Javascript and MySQL.'
