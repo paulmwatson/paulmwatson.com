@@ -1,7 +1,7 @@
 en:
   site:
     title: "Paul M. Watson"
-    sub_title: "Freelance Web Developer & Designer in Ireland"
+    sub_title: "Freelance Ruby on Rails Web Developer & Designer in Ireland"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
     fb_app_id: 183463458351580
-    description: 'The website of Paul M. Watson, a freelance web developer and designer in Ireland. Specialising in Ruby on Rails, HTML5, CSS3, Javascript and MySQL.'
+    description: 'The website of Paul M. Watson, a freelance web developer and designer in Ireland. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL.'
