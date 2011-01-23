@@ -69,6 +69,13 @@ article.about header
   line-height: 1em;
 }
 
+article.about header .photo
+{
+  border-radius: 4px;
+  float: left;
+  margin-right: 0.2em;
+}
+
 article.about header h1
 {
   font-weight: normal;

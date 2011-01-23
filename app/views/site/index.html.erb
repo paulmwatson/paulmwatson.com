@@ -5,15 +5,20 @@
 
 <article class="about">
   <header>
-    <h1><%= t :title, :scope => [:site] %></h1>
-    <p><%= t :sub_title, :scope => [:site] %>.</p>
+    <%= image_tag 'avatar_75x75.jpg', :class => 'photo', :alt => "Stylised photo of #{t :name_given, :scope => [:site]} #{t :name_middle, :scope => [:site]} #{t :name_family, :scope => [:site]}" %>
+    <h1 class="fn n">
+      <span class="given-name"><%= t :name_given, :scope => [:site] %></span> 
+      <span class="additional-name"><%= t :name_middle, :scope => [:site] %></span> 
+      <span class="family-name"><%= t :name_family, :scope => [:site] %></span> 
+    </h1>
+    <p><%= t(:sub_title, :scope => [:site], :country => '<span class="adr"><span class="country-name">' + t(:country, :scope => [:site]) + '</span></span>').html_safe %>.</p>
   </header>
   <nav>
     <ul>
-      <li>Email: <a href="mailto:paul@paulmwatson.com">paul@paulmwatson.com</a></li>
-      <li>Phone: +353 86 896 8944</li>
-      <li>Twitter: <a href="http://twitter.com/paulmwatson">@paulmwatson</a></li>
-      <li>Skype: <a href="skype:paulmwatson?call">paulmwatson</a></li>
+      <li>Email: <a class="email" href="mailto:paul@paulmwatson.com">paul@paulmwatson.com</a></li>
+      <li>Phone: <span class="tel">+353 86 896 8944</span></li>
+      <li>Twitter: <a class="url" href="http://twitter.com/paulmwatson">@paulmwatson</a></li>
+      <li>Skype: <a class="url" href="skype:paulmwatson?call">paulmwatson</a></li>
       <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
       <li><a href="http://www.flickr.com/photos/paulwatson/">Photos</a></li>
       <li><a href="http://lastfm.com/user/paulmwatson/">Music</a></li>
