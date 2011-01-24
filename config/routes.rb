@@ -1,5 +1,7 @@
 Pmw::Application.routes.draw do
   get "site/index"
+  get "paulmwatson.vcf" => 'site#index', :format => :vcf
+  get "vcard" => 'site#index', :format => :vcf
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -63,6 +63,11 @@ article.about nav
   position: absolute;
 }
 
+article.about nav .hidden
+{
+  display: none;
+}
+
 article.about header
 {
   font-size: 3em;
@@ -79,6 +84,12 @@ article.about header .photo
 article.about header h1
 {
   font-weight: normal;
+}
+
+article.about header h1 abbr
+{
+  text-decoration: none;
+  border-style: none;
 }
 
 article.about header p
