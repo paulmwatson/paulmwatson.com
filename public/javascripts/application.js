@@ -2,9 +2,13 @@ var com =
 {
   paulmwatson: 
   {
+    cdn: function()
+    {
+      return $('meta[name="cdn"]').attr('content');
+    },
     init: function()
     {
-      $.backstretch('http://d55udxcumsrf1.cloudfront.net/images/photos/me/namibia.jpg', {speed: 500});
+      $.backstretch(com.paulmwatson.cdn() + '/images/photos/me/namibia.jpg', {speed: 500});
     }
   }
 };

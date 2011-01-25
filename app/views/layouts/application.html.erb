@@ -6,11 +6,13 @@
     <meta property="og:title" content="<%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %>"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://<%= request.host %>/"/>
-    <meta property="og:image" content="http://d55udxcumsrf1.cloudfront.net/images/avatar_75x75.jpg"/>
+    <meta property="og:image" content="<%= asset_host %>/images/avatar_75x75.jpg"/>
     <meta property="og:site_name" content="<%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %>">
     <meta property="fb:app_id" content="<%= t :fb_app_id, :scope => [:site] %>">
     <meta property="og:description" content="<%= t :description, :scope => [:site], :name_given => t(:name_given, :scope => [:site]), :name_middle => t(:name_middle, :scope => [:site]), :name_family => t(:name_family, :scope => [:site]), :country => t(:country, :scope => [:site]) %>">
-                   
+    
+    <meta name="cdn" content="<%= asset_host %>">
+    
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <%= include_stylesheets :common, :media => 'screen' %>
@@ -21,7 +23,6 @@
     <footer>
       <p>Updated <time datetime="2011-01-23" pubdate>January 23, 2011</time></p>
     </footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
     <%= include_javascripts :common %>
     <%- if (Rails.env.production?) -%>
     <script type="text/javascript">

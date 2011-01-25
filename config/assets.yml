@@ -7,6 +7,7 @@ s3_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 
 javascripts:
   common:
+    - public/javascripts/jquery-1.4.2.js
     - public/javascripts/jquery.backstretch.js
     - public/javascripts/application.js
 
