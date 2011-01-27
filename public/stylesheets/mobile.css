@@ -1,9 +1,15 @@
 @media screen and (max-device-width: 480px)
 {
+  body
+  {
+    background-color: #000;
+  }
+  
   .notice
   {
+    border-top-right-radius: 0;
+    opacity: 0.8;
     position: relative;
-    border-bottom-left-radius: 0;
   }
 
   article.about
@@ -15,8 +21,6 @@
   article.about header
   {
     font-size: 1.6em;
-    margin-bottom: 1em;
-    margin-top: 0.5em;
   }
   
   article.about header p
@@ -26,18 +30,15 @@
   
   article.about header .photo
   {
+    height: 2.2em;
     margin-right: 0.3em;
+    width: 2.2em;
   }
 
-  article.about nav
+  article.about section
   {
-    bottom: auto;
-    position: relative;
-  }
-
-  article.about nav li
-  {
-    text-shadow: -1px -1px 1px #666;
+    margin-bottom: 1em;
+    overflow: hidden;
   }
 
   footer
@@ -46,5 +47,21 @@
     position: relative;
     right: auto;
     text-align: center;
+  }
+  
+  article.about nav
+  {
+    position: relative;
+  }
+  
+  article.about nav li:first-child
+  {
+    display: none;
+  }
+
+  
+  #backstretch
+  {
+    opacity: 0.5;
   }
 }

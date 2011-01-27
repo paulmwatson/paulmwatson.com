@@ -1,30 +1,33 @@
-<div class="notice">
-  <%= t(:notice, :scope => [:site], :url => 'github.com/paulmwatson/paulmwatson.com').html_safe %>
-  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpaulmwatson.com%2Fpage%2Fto%2Flike&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px; vertical-align: -6px;" allowTransparency="true"></iframe>
-</div>
-
 <article class="vcard about">
   <header>
     <%= image_tag 'avatar_75x75.jpg', :class => 'photo', :alt => "Stylised photo of #{t :name_given, :scope => [:site]} #{t :name_middle, :scope => [:site]} #{t :name_family, :scope => [:site]}" %>
     <h1 class="fn"><span class="given-name"><%= t :name_given, :scope => [:site] %></span> <abbr class="additional-name" title="<%= t :name_middle_full, :scope => [:site] %>"><%= t :name_middle, :scope => [:site] %></abbr> <span class="family-name"><%= t :name_family, :scope => [:site] %></span></h1>
     <p><%= t(:sub_title, :scope => [:site], :country => '<span class="adr"><span class="country-name">' + t(:country, :scope => [:site]) + '</span></span>').html_safe %>.</p>
   </header>
+  
+  <section>
+    <p>Phone: <span class="tel"><%= t :phone, :scope => [:site] %></span></p>
+    <p>Email: <a class="email" href="mailto:<%= t :email, :scope => [:site] %>"><%= t :email, :scope => [:site] %></a></p>
+    <p>Twitter: <a class="url" href="http://twitter.com/<%= t :twitter, :scope => [:site] %>">@<%= t :twitter, :scope => [:site] %></a></p>
+    <p>Skype: <a class="url" href="skype:paulmwatson?call"><%= t :skype, :scope => [:site] %></a></p>
+  </section>
+
   <nav>
     <ul>
-      <li class="hidden"><a class="url" href="http://<%= request.host %>/">Home</a></li>
-      <li>Email: <a class="email" href="mailto:<%= t :email, :scope => [:site] %>"><%= t :email, :scope => [:site] %></a></li>
-      <li>Phone: <span class="tel"><%= t :phone, :scope => [:site] %></span></li>
-      <li>Twitter: <a class="url" href="http://twitter.com/<%= t :twitter, :scope => [:site] %>">@<%= t :twitter, :scope => [:site] %></a></li>
-      <li>Skype: <a class="url" href="skype:paulmwatson?call"><%= t :skype, :scope => [:site] %></a></li>
+      <li><a class="url" href="http://<%= request.host %>/">PMW</a></li>
+      <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
+      <li><a href="http://github.com/paulmwatson/">Code</a></li>
+      <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>
+      <li><a href="http://delicious.com/PaulMWatson/">Links</a></li>
+      <li><a href="https://www.google.com/calendar/b/0/embed?src=paul@paulmwatson.com&amp;ctz=Europe/Dublin">Calendar</a></li>
       <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
       <li><a href="http://www.flickr.com/photos/paulwatson/">Photos</a></li>
       <li><a href="http://lastfm.com/user/paulmwatson/">Music</a></li>
-      <li><a href="http://delicious.com/PaulMWatson/">Links</a></li>
-      <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
-      <li><a href="https://www.google.com/calendar/b/0/embed?src=paul@paulmwatson.com&amp;ctz=Europe/Dublin">Calendar</a></li>
-      <li><a href="http://github.com/paulmwatson/">Github</a></li>
-      <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>
       <li><a href="http://<%= request.host %>/vcard">vCard</a></li>
     </ul>
   </nav>
 </article>
+
+<div class="notice">
+  <%= t(:notice, :scope => [:site], :url => 'github.com/paulmwatson/paulmwatson.com').html_safe %>
+</div>

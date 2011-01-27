@@ -23,6 +23,11 @@ a:visited
   color: #eee;
 }
 
+a:hover
+{
+  color: #fc0;
+}
+
 .notice
 {
   background-color: #fc0;
@@ -31,10 +36,10 @@ a:visited
   line-height: 1.3em;
   padding: 0.2em 0.4em;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 0;
+  bottom: 0;
   text-align: center;
-  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .notice a
@@ -53,14 +58,20 @@ footer
 article.about
 {
   font-size: 1.2em;
-  margin: 1em;
+  margin: 3em 1em 1em 1em;
   padding: 1em;
 }
 
 article.about nav
 {
-  bottom: 2em;
+  background-color: rgba(0,0,0,0.3);
+  border-bottom: solid 1px rgba(0,0,0,0.2);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0.5em 0;
   position: absolute;
+  width: 100%;
 }
 
 article.about nav .hidden
@@ -74,11 +85,26 @@ article.about header
   line-height: 1em;
 }
 
+article.about section
+{
+  clear: both;
+}
+
+article.about section p
+{
+  float: left;
+  margin-top: 0.5em;
+  margin-right: 1em;
+}
+
 article.about header .photo
 {
-  border-radius: 4px;
+  border: solid 4px #fff;
+  border-radius: 2px;
   float: left;
+  height: 1.5em;
   margin-right: 0.2em;
+  width: 1.5em;
 }
 
 article.about header h1
@@ -100,5 +126,17 @@ article.about header p
 
 article.about nav li
 {
-  text-shadow: -1px -1px 1px #666;
+  float: left;
+  margin-left: 1em;
+  text-shadow: -1px -1px 1px #333;
+}
+
+article.about nav li a
+{
+  text-decoration: none;
+}
+
+article.about nav li:first-child a
+{
+  font-weight: bold;
 }
