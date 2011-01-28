@@ -49,10 +49,10 @@ a:hover
 
 footer
 {
-  bottom: 0.5em;
+  bottom: 0.2em;
   opacity: 0.5;
   position: absolute;
-  right: 0.5em;
+  right: 5em;
 }
 
 article.about
@@ -92,6 +92,7 @@ article.about section
 
 article.about section p
 {
+  font-size: 0.9em;
   float: left;
   margin-top: 0.5em;
   margin-right: 1em;

@@ -1,11 +1,11 @@
 <article class="vcard about">
   <header>
     <%= image_tag 'avatar_75x75.jpg', :class => 'photo', :alt => "Stylised photo of #{t :name_given, :scope => [:site]} #{t :name_middle, :scope => [:site]} #{t :name_family, :scope => [:site]}" %>
-    <h1 class="fn"><span class="given-name"><%= t :name_given, :scope => [:site] %></span> <abbr class="additional-name" title="<%= t :name_middle_full, :scope => [:site] %>"><%= t :name_middle, :scope => [:site] %></abbr> <span class="family-name"><%= t :name_family, :scope => [:site] %></span></h1>
-    <p><%= t(:sub_title, :scope => [:site], :country => '<span class="adr"><span class="country-name">' + t(:country, :scope => [:site]) + '</span></span>').html_safe %>.</p>
+    <h1 class="fn tk-raleway"><span class="given-name"><%= t :name_given, :scope => [:site] %></span> <abbr class="additional-name" title="<%= t :name_middle_full, :scope => [:site] %>"><%= t :name_middle, :scope => [:site] %></abbr> <span class="family-name"><%= t :name_family, :scope => [:site] %></span></h1>
+    <p class="tk-raleway"><%= t(:sub_title, :scope => [:site], :country => '<span class="adr"><span class="country-name">' + t(:country, :scope => [:site]) + '</span></span>').html_safe %>.</p>
   </header>
   
-  <section>
+  <section class="tk-raleway" style="text-transform: uppercase;">
     <p>Phone: <span class="tel"><%= t :phone, :scope => [:site] %></span></p>
     <p>Email: <a class="email" href="mailto:<%= t :email, :scope => [:site] %>"><%= t :email, :scope => [:site] %></a></p>
     <p>Twitter: <a class="url" href="http://twitter.com/<%= t :twitter, :scope => [:site] %>">@<%= t :twitter, :scope => [:site] %></a></p>

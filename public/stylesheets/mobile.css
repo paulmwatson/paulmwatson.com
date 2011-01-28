@@ -40,6 +40,11 @@
     margin-bottom: 1em;
     overflow: hidden;
   }
+  
+  article.about section p
+  {
+    font-size: 0.8em;
+  }
 
   footer
   {

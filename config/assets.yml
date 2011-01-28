@@ -10,6 +10,7 @@ javascripts:
     - public/javascripts/jquery-1.4.2.js
     - public/javascripts/jquery.backstretch.js
     - public/javascripts/application.js
+    - public/javascripts/thirdparty.js
 
 stylesheets:
   common:
