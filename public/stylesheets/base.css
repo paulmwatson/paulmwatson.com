@@ -82,19 +82,13 @@ article.about nav .hidden
 article.about header
 {
   font-size: 3em;
-  line-height: 1em;
-}
-
-article.about section
-{
-  clear: both;
+  line-height: 0.7em;
 }
 
 article.about section p
 {
   font-size: 0.9em;
   float: left;
-  margin-top: 0.5em;
   margin-right: 1em;
 }
 
@@ -103,9 +97,10 @@ article.about header .photo
   border: solid 4px #fff;
   border-radius: 2px;
   float: left;
-  height: 1.5em;
+  height: 75px;
   margin-right: 0.2em;
-  width: 1.5em;
+  margin-top: -0.1em;
+  width: 75px;
 }
 
 article.about header h1
@@ -122,7 +117,6 @@ article.about header h1 abbr
 article.about header p
 {
   font-size: 0.5em;
-  line-height: 1em;
 }
 
 article.about nav li
