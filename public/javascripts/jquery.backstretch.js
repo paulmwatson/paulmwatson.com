@@ -50,7 +50,6 @@
                   
                 $("body").prepend(container);
                 img.attr("src", src); // Hack for IE img onload event
-                console.log(src);
 
                 // Adjust the background size when the window is resized or orientation has changed (iOS)
                 $(window).resize(_adjustBG);
