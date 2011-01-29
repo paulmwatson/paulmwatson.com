@@ -65,9 +65,13 @@
     display: none;
   }
 
-  
   #backstretch
   {
     opacity: 0.5;
+  }
+  
+  #backstretch-next, #backstretch-previous
+  {
+    display: none;
   }
 }

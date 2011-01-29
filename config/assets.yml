@@ -9,11 +9,13 @@ javascripts:
   common:
     - public/javascripts/jquery-1.4.2.js
     - public/javascripts/jquery.backstretch.js
-    - public/javascripts/application.js
     - public/javascripts/thirdparty.js
+    - public/javascripts/application.js
+    - public/javascripts/photos.js
 
 stylesheets:
   common:
     - public/stylesheets/reset.css
     - public/stylesheets/base.css
     - public/stylesheets/mobile.css
+    - public/stylesheets/photos.css
