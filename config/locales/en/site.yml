@@ -1,6 +1,7 @@
 en:
   site:
     email: paul@paulmwatson.com
+    email_hire: hire@paulmwatson.com
     jabber: paul@paulmwatson.com
     twitter: paulmwatson
     skype: paulmwatson
@@ -10,7 +11,7 @@ en:
     name_middle_full: 'Michael'
     name_family: 'Watson'
     country: 'Ireland'
-    sub_title: "Freelance Ruby on Rails Web Developer and Designer in %{country}"
+    sub_title: "Freelance Ruby on Rails Web Development and Design in %{country}"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
     fb_app_id: 183463458351580
     description: "The website of %{name_given} %{name_middle} %{name_family}, a freelance web developer and designer in %{country}. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."

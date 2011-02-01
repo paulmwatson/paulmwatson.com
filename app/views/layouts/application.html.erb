@@ -3,6 +3,7 @@
     <title><%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %></title>
     <meta charset="<%= Encoding.default_external.name %>">
 
+    <!-- Facebook Open Graph -->
     <meta property="og:title" content="<%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %>"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://<%= request.host %>/"/>
@@ -15,33 +16,14 @@
     
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
-    <%= include_stylesheets :common, :media => 'screen' %>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+    <%= include_stylesheets :base, :media => 'screen' %>
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="http://<%= request.host %>/">PMW</a></li>
-        <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
-        <li><a href="http://github.com/paulmwatson/">Code</a></li>
-        <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>
-        <li><a href="http://delicious.com/PaulMWatson/">Links</a></li>
-        <li><a href="https://www.google.com/calendar/b/0/embed?src=paul@paulmwatson.com&amp;ctz=Europe/Dublin">Calendar</a></li>
-        <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
-        <li><a href="/photos/">Photos</a></li>
-        <li><a href="http://lastfm.com/user/paulmwatson/">Music</a></li>
-        <li><a href="http://<%= request.host %>/vcard">vCard</a></li>
-      </ul>
-    </nav>
     <%= yield %>
-    <footer>
-      <p>Updated <time datetime="2011-01-23" pubdate>January 23, 2011</time></p>
-    </footer>
-    <script type="text/javascript" src="http://use.typekit.com/fyt5usg.js"></script>
-    <%= include_javascripts :common %>
-    <script type="text/javascript">
-      $(com.paulmwatson.init());
     <%- if (Rails.env.production?) -%>
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-265441-2']);
       _gaq.push(['_trackPageview']);
@@ -50,7 +32,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    <%- end -%>
     </script>
+    <%- end -%>
   </body>
 </html>
