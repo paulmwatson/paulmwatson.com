@@ -27,3 +27,9 @@
   background: transparent url(/images/photos/previous.png) no-repeat;
   left: 10px;
 }
+
+.photos
+{
+  background-color: rgba(255,255,255,0.5);
+  margin: 1em;
+}

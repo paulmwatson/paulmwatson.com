@@ -19,6 +19,20 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="http://<%= request.host %>/">PMW</a></li>
+        <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
+        <li><a href="http://github.com/paulmwatson/">Code</a></li>
+        <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>
+        <li><a href="http://delicious.com/PaulMWatson/">Links</a></li>
+        <li><a href="https://www.google.com/calendar/b/0/embed?src=paul@paulmwatson.com&amp;ctz=Europe/Dublin">Calendar</a></li>
+        <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
+        <li><a href="/photos/">Photos</a></li>
+        <li><a href="http://lastfm.com/user/paulmwatson/">Music</a></li>
+        <li><a href="http://<%= request.host %>/vcard">vCard</a></li>
+      </ul>
+    </nav>
     <%= yield %>
     <footer>
       <p>Updated <time datetime="2011-01-23" pubdate>January 23, 2011</time></p>
