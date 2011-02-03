@@ -48,7 +48,7 @@ article header section
   overflow: hidden;
   text-align: right;
   text-shadow: none;
-  width: 5em;
+  width: 4.8em;
 }
 
 article header section a:last-child
@@ -70,7 +70,6 @@ article header section .photo
   border-radius: 2px;
   -webkit-border-radius: 2px;
   float: right;
-  margin-left: 0.25em;
 }
 
 article header section p
