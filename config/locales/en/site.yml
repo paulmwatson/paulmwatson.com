@@ -5,11 +5,12 @@ en:
     jabber: paul@paulmwatson.com
     twitter: paulmwatson
     skype: paulmwatson
-    phone: '+353 86 896 8944'
+    phone: '353 86 896 8944'
     name_given: 'Paul'
     name_middle: 'M.'
     name_middle_full: 'Michael'
     name_family: 'Watson'
+    town: 'Dublin'
     country: 'Ireland'
     sub_title: "Freelance Ruby on Rails Web Development and Design in %{country}"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'

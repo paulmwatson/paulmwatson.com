@@ -48,6 +48,7 @@ article header section
   overflow: hidden;
   text-align: right;
   text-shadow: none;
+  width: 5em;
 }
 
 article header section a:last-child
@@ -109,6 +110,16 @@ article>section p
   -webkit-column-gap: 2em;
 }
 
+article>section p:first-letter
+{
+  color: #fc0;
+  float: left;
+  font-size: 2.8em;
+  line-height: 0.7em;
+  margin-bottom: -0.1em;
+  margin-top: 0.16em;
+}
+
 article footer
 {
   font-size: 0.5em;
@@ -161,7 +172,7 @@ footer li:first-child
 {
   article header>p
   {
-    font-size: 0.36em;
+    font-size: 0.35em;
   }
 
   article>section p

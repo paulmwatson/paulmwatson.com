@@ -16,4 +16,5 @@ javascripts:
 stylesheets:
   base:
     - public/stylesheets/reset.css
+    - public/stylesheets/fonts.css
     - public/stylesheets/base.css

@@ -4,8 +4,8 @@ N:<%= t :name_family, :scope => [:site] %>;<%= t :name_given, :scope => [:site] 
 FN:<%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %>
 ORG:Freelance Web Developer & Designer;
 EMAIL;type=INTERNET;type=WORK;type=pref:<%= t :email, :scope => [:site] %>
-TEL;type=CELL;type=pref:<%= t :phone, :scope => [:site] %>
-item1.ADR;type=WORK;type=pref:;;;;;;<%= t :country, :scope => [:site] %>
+TEL;type=CELL;type=pref:+<%= t :phone, :scope => [:site] %>
+item1.ADR;type=WORK;type=pref:;;;;;<%= t :town, :scope => [:site] %>;<%= t :country, :scope => [:site] %>
 item1.X-ABADR:ie
 item2.URL;type=pref:http\://<%= request.host %>
 item2.X-ABLabel:_$!<HomePage>!$_
