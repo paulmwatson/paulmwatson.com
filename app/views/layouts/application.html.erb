@@ -1,6 +1,8 @@
 <!DOCTYPE html>
   <head lang="<%= I18n.locale %>">
+    <%- if (Rails.env.production?) -%>
     <script src="http://cdn.optimizely.com/js/4878149.js"></script>
+    <%- end -%>
 
     <title><%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %></title>
     <meta charset="<%= Encoding.default_external.name %>">
@@ -12,12 +14,28 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <%- if (Rails.env.production?) -%>
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+    <%- end -%>
     <%= include_stylesheets :base, :media => 'screen' %>
     <%= csrf_meta_tag %>
   </head>
-  <body>
+  <body class="vcard">
     <%= yield %>
+    <footer>
+      <ul>
+        <li>Updated <time datetime="2011-02-03" pubdate>3rd of February 2011</time></li>
+        <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
+        <li><a href="http://github.com/paulmwatson/">Code</a></li>
+        <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>
+        <li><a href="http://delicious.com/PaulMWatson/">Links</a></li>
+        <li><a href="https://www.google.com/calendar/b/0/embed?src=<%= t :email, :scope => [:site] %>&amp;ctz=Europe/Dublin">Calendar</a></li>
+        <li><a href="http://flickr.com/paulwatson/">Photos</a></li>
+        <li><a href="http://lastfm.com/user/paulmwatson/">Music</a></li>
+        <li><a class="url" href="http://twitter.com/<%= t :twitter, :scope => [:site] %>">Twitter</a>
+        <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
+      </ul>
+    </footer>
     <%- if (Rails.env.production?) -%>
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -28,19 +46,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
-    
-    <script type="text/javascript">
-    var GoSquared={};
-    GoSquared.acct = "GSN-513186-S";
-    (function(w){
-        function gs(){
-            w._gstc_lt=+(new Date); var d=document;
-            var g = d.createElement("script"); g.type = "text/javascript"; g.async = true; g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-            var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);
-        }
-        w.addEventListener?w.addEventListener("load",gs,false):w.attachEvent("onload",gs);
-    })(window);
     </script>
     <%- end -%>
   </body>

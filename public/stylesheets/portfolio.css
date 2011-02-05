@@ -1,0 +1,65 @@
+.portfolio ul, .portfolio ul li
+{
+  list-style-type: none;
+}
+
+.portfolio .projects
+{
+  clear: both;
+  font-size: 0.8em;
+  overflow: hidden;
+  -webkit-column-count: 4;
+}
+
+.portfolio .projects .project
+{
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s linear;
+}
+
+.portfolio .projects .project:hover
+{
+  opacity: 1;
+  -webkit-transition: opacity 0.2s linear;
+}
+
+.portfolio .projects .project .screenshot
+{
+  border-radius: 4px;
+  width: 100%;
+}
+
+.portfolio .projects .project .title
+{
+}
+
+.portfolio .projects .project article
+{
+  margin: 0;
+}
+
+.portfolio .projects .project article header
+{
+  margin: 0;
+}
+
+.portfolio .projects .project p
+{
+  -webkit-column-count: 1;
+}
+
+@media screen and (max-width: 1075px) 
+{
+  .portfolio .projects
+  {
+    -webkit-column-count: 2;
+  }
+}
+
+@media screen and (max-device-width: 480px)
+{
+  .portfolio .projects
+  {
+    -webkit-column-count: 1;
+  }
+}

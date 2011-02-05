@@ -4,8 +4,9 @@ body
   background-size: 100%;
   color: #fff;
   font-family: 'Raleway', arial, serif;
-  font-size: 2em;
+  font-size: 14px;
   font-weight: normal;
+  padding: 2em;
   text-shadow: -1px -1px 0 #000;
 }
 
@@ -23,108 +24,12 @@ a:hover
   -webkit-transition: color 0.2s linear;
 }
 
-article
+footer
 {
-  margin: 1em;
-}
-
-article header
-{
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  overflow: hidden;
-}
-
-article header p
-{
-  font-size: 0.4em;
-}
-
-article header section
-{
-  float: right;
-  font-size: 0.9em;
-  line-height: 0.35em;
-  overflow: hidden;
-  text-align: right;
-  text-shadow: none;
-  width: 4.8em;
-}
-
-article header section a:last-child
-{
-  opacity: 0.2;
-  font-size: 0.7em;
-  -webkit-transition: opacity 0.2s linear;
-}
-
-article header section:hover a:last-child
-{
-  opacity: 1;
-  -webkit-transition: opacity 0.2s linear;
-
-}
-
-article header section .photo
-{
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  float: right;
-}
-
-article header section p
-{
-  float: left;
-  font-size: 0.3em;
-}
-
-article header h1
-{
-  font-weight: normal;
-  margin-bottom: -0.2em;
-  margin-left: -0.05em;
-}
-
-article header h1 a, article header h1 a abbr
-{
-  color: #fff;
-  border-style: none!important;
-  text-decoration: none;
-}
-
-article>section
-{
-  border: solid 1px rgba(255,255,255,0.1);
-  border-left-style: none;
-  border-right-style: none;
-  clear: both;
-  padding: 0.5em 0;
-}
-
-article>section p
-{
-  font-size: 0.8em;
-  line-height: 1.2;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 2em;
-}
-
-article>section p:first-letter
-{
-  color: #fc0;
-  float: left;
-  font-size: 2.8em;
-  line-height: 0.7em;
-  margin-bottom: -0.1em;
-  margin-top: 0.16em;
-}
-
-article footer
-{
-  font-size: 0.5em;
+  font-size: 1.2em;
   line-height: 1.3em;
+  margin-top: 1em;
   opacity: 0.5;
-  padding: 1em 0 0 0;
   text-align: right;
   text-transform: uppercase;
 }
@@ -140,95 +45,5 @@ footer li:first-child
 {
   float: left;
   margin-left: 0;
-}
-
-.button
-{
-  background-color: #069;
-  border: solid 1px rgba(255,255,255,0.1);
-  border-bottom-color: rgba(0,0,0,0.5);
-  border-right-color: rgba(0,0,0,0.5);
-  border-radius: 2px;
-  color: #fff;
-  display: block;
-  letter-spacing: 0.2em;
-  margin-top: 0.5em;
-  padding: 0.3em 0 0 0;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition:background-color 0.2s linear;
-}
-
-.button:hover
-{
-  background-color: #08b;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition:background-color 0.2s linear;
-}
-
-@media screen and (max-width: 1075px) 
-{
-  article header>p
-  {
-    font-size: 0.35em;
-  }
-
-  article>section p
-  {
-    -webkit-column-count: 2;
-  }
-}
-
-@media screen and (max-device-width: 1024px)
-{
-  article>section p
-  {
-    -webkit-column-count: 1;
-  }
-
-  article header
-  {
-    font-size: 1.5em;
-  }
-
-  article header section .photo
-  {
-    height: 60px;
-    width: 60px;
-  }
-  
-  .button
-  {
-    padding-bottom: 0.2em;
-  }
-}
-
-@media screen and (max-device-width: 480px)
-{
-  body
-  {
-    font-size: 1.21em;
-  }
-
-  article
-  {
-    margin: 0.5em;
-  }
-
-  article header section
-  {
-    float: none;
-    font-size: 1.8em;
-  }
-
-  article header section p
-  {
-    float: none;
-  }
-  
-  .button
-  {
-    padding-bottom: 0.2em;
-  }
+  opacity: 0.5;
 }

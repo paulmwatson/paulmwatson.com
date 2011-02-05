@@ -18,3 +18,6 @@ stylesheets:
     - public/stylesheets/reset.css
     #- public/stylesheets/fonts.css
     - public/stylesheets/base.css
+    - public/stylesheets/buttons.css
+    - public/stylesheets/home.css
+    - public/stylesheets/portfolio.css
