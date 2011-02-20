@@ -10,7 +10,7 @@ en:
     name_middle: 'M.'
     name_middle_full: 'Michael'
     name_family: 'Watson'
-    town: 'Dublin'
+    town: 'Waterford'
     country: 'Ireland'
     sub_title: "Freelance Ruby on Rails Web Development and Design in %{country}"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
