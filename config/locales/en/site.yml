@@ -12,7 +12,7 @@ en:
     name_family: 'Watson'
     town: 'Waterford'
     country: 'Ireland'
-    sub_title: "Freelance Ruby on Rails Web Development and Design in %{country}"
+    sub_title: "Ruby on Rails Web Developer and Designer in %{country}"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
     fb_app_id: 183463458351580
-    description: "The website of %{name_given} %{name_middle} %{name_family}, a freelance web developer and designer in %{country}. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."
+    description: "The website of %{name_given} %{name_middle} %{name_family}, a web developer and designer in %{country}. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."
