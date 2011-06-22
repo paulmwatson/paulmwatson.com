@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head lang="<%= I18n.locale %>">
-    <title><%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %></title>
+    <title><%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %> @<%= t :twitter, :scope => [:site] %></title>
     <meta name="description" content="<%= t :description, :scope => :site, :country => t(:country, :scope => [:site]), :name_given => t(:name_given, :scope => [:site]), :name_middle => t(:name_middle_full, :scope => [:site]), :name_family => t(:name_family, :scope => [:site]) %>">
     <meta charset="<%= Encoding.default_external.name %>">
     
@@ -23,7 +23,7 @@
     <%= yield %>
     <footer>
       <ul>
-        <li>Updated <time datetime="2011-03-30" pubdate>30th of March 2011</time></li>
+        <li>Updated <time datetime="2011-06-22" pubdate>22nd of June 2011</time></li>
         <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
         <li><a href="http://github.com/paulmwatson/">Code</a></li>
         <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>

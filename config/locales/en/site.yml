@@ -10,9 +10,9 @@ en:
     name_middle: 'M.'
     name_middle_full: 'Michael'
     name_family: 'Watson'
-    town: 'Waterford'
+    town: 'Dublin'
     country: 'Ireland'
-    sub_title: "Ruby on Rails Web Developer and Designer in %{country}"
+    sub_title: "Storyful.com Web Developer in %{country}"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
     fb_app_id: 183463458351580
-    description: "The website of %{name_given} %{name_middle} %{name_family}, a web developer and designer in %{country}. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."
+    description: "The website of %{name_given} %{name_middle} %{name_family}, a web developer and designer in %{country} working for Storyful.com. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."

@@ -2,10 +2,10 @@
 	Development, Content and Design:Paul M. Watson
 	Contact: paul [at] paulmwatson.com
 	Twitter: @paulmwatson
-	From:Waterford, Ireland
+	From:Dublin, Ireland
 
 /* SITE */
-	Last update:2011/02/20
+	Last update:2011/06/22
 	Language:English
 	Doctype:HTML5 with CSS3
 	Tools:Ruby on Rails
