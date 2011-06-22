@@ -31,10 +31,11 @@
         <li><a href="https://www.google.com/calendar/b/0/embed?src=<%= t :email, :scope => [:site] %>&amp;ctz=Europe/Dublin">Calendar</a></li>
         <li><a href="http://flickr.com/paulwatson/">Photos</a></li>
         <li><a href="http://lastfm.com/user/paulmwatson/">Music</a></li>
-        <li><a class="url" href="http://twitter.com/<%= t :twitter, :scope => [:site] %>">Twitter</a>
+        <li><a class="url" href="http://twitter.com/<%= t :twitter, :scope => [:site] %>">Twitter</a></li>
         <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
       </ul>
     </footer>
+    <%= include_javascripts :common %>
     <%- if (Rails.env.production?) -%>
     <script type="text/javascript">
       var _gaq = _gaq || [];
