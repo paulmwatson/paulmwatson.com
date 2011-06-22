@@ -12,7 +12,7 @@ javascripts:
     - public/javascripts/application.js
 
 stylesheets:
-  base2:
+  base3:
     - public/stylesheets/reset.css
     - public/stylesheets/showcase.css
     - public/stylesheets/showcase-style-5.css

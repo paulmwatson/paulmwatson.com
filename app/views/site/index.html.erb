@@ -1,17 +1,4 @@
 <article class="intro">
-  <header>
-    <section>
-      <%= image_tag 'avatar_75x75_red.jpg', :class => 'photo', :alt => "Stylised photo of #{t :name_given, :scope => [:site]} #{t :name_middle, :scope => [:site]} #{t :name_family, :scope => [:site]}" %>
-      <p>
-        <%= t :email, :scope => [:site] %><br>
-        <span class="tel">&plus;<%= t(:phone, :scope => [:site]).html_safe %></span><br>
-        <span class="adr"><span class="locality"><%= t(:town, :scope => [:site]) %></span>, <span class="country-name"><%= t(:country, :scope => [:site]) %></span></span><br>
-        <a class="download" href="/vcard">Download vCard</a>
-      </p>
-    </section>
-    <h1 class="fn"><a class="url" href="http://<%= request.host %>/"><span class="given-name"><%= t :name_given, :scope => [:site] %></span> <abbr class="additional-name" title="<%= t :name_middle_full, :scope => [:site] %>"><%= t :name_middle, :scope => [:site] %></abbr> <span class="family-name"><%= t :name_family, :scope => [:site] %></span></a></h1>
-    <p><%= t(:sub_title, :scope => [:site], :country => t(:country, :scope => [:site])).html_safe %></p>
-  </header>
   <div id="showcase" class="showcase">
     <div class="showcase-slide">
       <div class="showcase-content">
@@ -104,4 +91,17 @@
       </div>
     </div>
   </div>
+  <header>
+    <section>
+      <%= image_tag 'avatar_75x75_red.jpg', :class => 'photo', :alt => "Stylised photo of #{t :name_given, :scope => [:site]} #{t :name_middle, :scope => [:site]} #{t :name_family, :scope => [:site]}" %>
+      <p>
+        <%= t :email, :scope => [:site] %><br>
+        <span class="tel">&plus;<%= t(:phone, :scope => [:site]).html_safe %></span><br>
+        <span class="adr"><span class="locality"><%= t(:town, :scope => [:site]) %></span>, <span class="country-name"><%= t(:country, :scope => [:site]) %></span></span><br>
+        <a class="download" href="/vcard">Download vCard</a>
+      </p>
+    </section>
+    <h1 class="fn"><a class="url" href="http://<%= request.host %>/"><span class="given-name"><%= t :name_given, :scope => [:site] %></span> <abbr class="additional-name" title="<%= t :name_middle_full, :scope => [:site] %>"><%= t :name_middle, :scope => [:site] %></abbr> <span class="family-name"><%= t :name_family, :scope => [:site] %></span></a></h1>
+    <p><%= t(:sub_title, :scope => [:site], :country => t(:country, :scope => [:site])).html_safe %></p>
+  </header>
 </article>
