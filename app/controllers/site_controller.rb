@@ -4,5 +4,9 @@ class SiteController < ApplicationController
   def index
     respond_with 
   end
+  
+  def finished
+    @hide_footer = true
+  end
 
 end

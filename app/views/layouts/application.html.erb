@@ -21,6 +21,7 @@
   </head>
   <body class="vcard">
     <%= yield %>
+    <%- if !@hide_footer -%>
     <footer>
       <ul>
         <li>Updated <time datetime="2011-06-22" pubdate>22nd of June 2011</time></li>
@@ -35,6 +36,7 @@
         <li><a href="http://ie.linkedin.com/in/paulmwatson">LinkedIn</a></li>
       </ul>
     </footer>
+    <%- end -%>
     <%= include_javascripts :common2 %>
     <%- if (Rails.env.production?) -%>
     <script type="text/javascript">
