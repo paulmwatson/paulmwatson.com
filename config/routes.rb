@@ -1,4 +1,5 @@
 Pmw::Application.routes.draw do
+  get "/shuttle/" => 'site#shuttle'
   get "projects/index"
 
   get "photos" => 'photos#index'
