@@ -65,6 +65,10 @@
       var intercomSettings = {
           app_id: 'hjrsswna',
           email: '<%= @current_user.email %>',
+          widget: {
+            activator: '#IntercomDefaultWidget'
+          },
+          user_hash: '<%= Digest::SHA1.hexdigest('cbnuv8rh' + @current_user.email) %>',
           created_at: '<%= @current_user.created_at.to_i %>'
         };
         (function() {
@@ -76,6 +80,7 @@
           script.parentNode.insertBefore(s, script);
       })();
     </script>
+    
     <%- end -%>
   </body>
 </html>
