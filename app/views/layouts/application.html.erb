@@ -61,6 +61,21 @@
           w.addEventListener?w.addEventListener("load",gs,false):w.attachEvent("onload",gs);
       })(window);
     </script>
+    <script>
+      var intercomSettings = {
+          app_id: 'hjrsswna',
+          email: '<%= @current_user.email %>',
+          created_at: '<%= @current_user.created_at.to_i %>'
+        };
+        (function() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://api.intercomapp.com/api/js/library.js';
+          var script = document.getElementsByTagName('script')[0];
+          script.parentNode.insertBefore(s, script);
+      })();
+    </script>
     <%- end -%>
   </body>
 </html>
