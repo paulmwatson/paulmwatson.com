@@ -12,7 +12,7 @@ javascripts:
     - public/javascripts/application.js
 
 stylesheets:
-  base3:
+  base4:
     - public/stylesheets/reset.css
     - public/stylesheets/showcase.css
     - public/stylesheets/showcase-style-5.css
@@ -20,3 +20,4 @@ stylesheets:
     - public/stylesheets/base.css
     - public/stylesheets/buttons.css
     - public/stylesheets/home.css
+    - public/stylesheets/support.css
