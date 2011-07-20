@@ -4,6 +4,8 @@ Pmw::Application.routes.draw do
   get "projects/index"
 
   get "photos" => 'photos#index'
+  
+  get "litest" => 'site#linkedin'
 
   get "site/index"
   get "paulmwatson.vcf" => 'site#index', :format => :vcf
