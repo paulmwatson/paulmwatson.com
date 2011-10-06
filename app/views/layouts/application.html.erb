@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head lang="<%= I18n.locale %>">
-    <title><%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %> @<%= t :twitter, :scope => [:site] %></title>
+    <title>Steve Jobs - 1955-2011</title>
     <meta name="description" content="<%= t :description, :scope => :site, :country => t(:country, :scope => [:site]), :name_given => t(:name_given, :scope => [:site]), :name_middle => t(:name_middle_full, :scope => [:site]), :name_family => t(:name_family, :scope => [:site]) %>">
     <meta charset="<%= Encoding.default_external.name %>">
     
@@ -19,7 +19,7 @@
     <%= include_stylesheets :base4, :media => 'screen' %>
     <%= csrf_meta_tag %>
   </head>
-  <body class="vcard">
+  <body class="vcard white">
     <%= yield %>
     <%- if !@hide_footer -%>
     <footer>
@@ -82,5 +82,10 @@
     </script>
     
     <%- end -%>
+    <style>
+      html, body {background-color: #fff; overflow: hidden;}
+      footer {display: none;}
+      #stevejobs {display: block; position: absolute; bottom: -10px; right: 0;}
+    </style>
   </body>
 </html>
