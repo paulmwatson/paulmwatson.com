@@ -10,5 +10,5 @@ Pmw::Application.routes.draw do
   # Finished the internet for Mark Little 20110701
   match '/finished/' => 'site#finished'
 
-  root :to => 'site#stevejobs'
+  root :to => 'site#index'
 end

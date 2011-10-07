@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head lang="<%= I18n.locale %>">
-    <title>Steve Jobs - 1955-2011</title>
+    <title><%= t :sub_title, :scope => :site, :country => t(:country, :scope => [:site]) %> - <%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %> @<%= t :twitter, :scope => [:site] %></title>
     <meta name="description" content="<%= t :description, :scope => :site, :country => t(:country, :scope => [:site]), :name_given => t(:name_given, :scope => [:site]), :name_middle => t(:name_middle_full, :scope => [:site]), :name_family => t(:name_family, :scope => [:site]) %>">
     <meta charset="<%= Encoding.default_external.name %>">
     
@@ -49,43 +49,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <script type="text/javascript">
-      var GoSquared={};
-      GoSquared.acct = "GSN-107308-H";
-      (function(w){
-          function gs(){
-              w._gstc_lt=+(new Date); var d=document;
-              var g = d.createElement("script"); g.type = "text/javascript"; g.async = true; g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-              var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);
-          }
-          w.addEventListener?w.addEventListener("load",gs,false):w.attachEvent("onload",gs);
-      })(window);
-    </script>
-    <script>
-      /*var intercomSettings = {
-          app_id: 'hjrsswna',
-          email: '<%= @current_user.email %>',
-          widget: {
-            activator: '#IntercomDefaultWidget'
-          },
-          user_hash: '<%= Digest::SHA1.hexdigest('cbnuv8rh' + @current_user.email) %>',
-          created_at: '<%= @current_user.created_at.to_i %>'
-        };
-        (function() {
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = 'https://api.intercomapp.com/api/js/library.js';
-          var script = document.getElementsByTagName('script')[0];
-          script.parentNode.insertBefore(s, script);
-      })();*/
-    </script>
-    
     <%- end -%>
-    <style>
-      html, body {background-color: #fff; overflow: hidden;}
-      footer {display: none;}
-      #stevejobs {display: block; position: absolute; bottom: -10px; right: 0;}
-    </style>
   </body>
 </html>
