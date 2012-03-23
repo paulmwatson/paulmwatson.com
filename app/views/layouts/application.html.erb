@@ -18,13 +18,16 @@
     <%- end -%>
     <%= include_stylesheets :base4, :media => 'screen' %>
     <%= csrf_meta_tag %>
+    <!-- start Mixpanel --><script type="text/javascript">(function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g="disable track track_links track_forms register register_once unregister identify name_tag set_config".split(" ");for(e=0;e<
+    g.length;e++)(function(a){b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c})(document,[]);
+    mixpanel.init("b27c5b13759fcbb8a2016c767c14afb8");</script><!-- end Mixpanel -->
   </head>
   <body class="vcard white">
     <%= yield %>
     <%- if !@hide_footer -%>
     <footer>
       <ul>
-        <li>Updated <time datetime="2011-06-22" pubdate>22nd of June 2011</time></li>
+        <li>Updated <time datetime="2011-06-22" pubdate>23rd of March 2012</time></li>
         <li><a href="http://blog.paulmwatson.com/">Blog</a></li>
         <li><a href="http://github.com/paulmwatson/">Code</a></li>
         <li><a href="http://behance.net/paulmwatson/frame">Portfolio</a></li>
