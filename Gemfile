@@ -5,7 +5,12 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'jammit-s3'
 
 group :development do
-  #gem 'heroku-rails'
+  gem 'heroku-rails'
+end
+
+group :production do
+	gem 'thin'
+	gem 'pg'
 end
 
 # Bundle edge Rails instead:
