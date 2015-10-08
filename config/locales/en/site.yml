@@ -12,7 +12,7 @@ en:
     name_family: 'Watson'
     town: 'Dublin'
     country: 'Ireland'
-    sub_title: "CTO @Storyful.com in %{country}"
+    sub_title: "Internet Product Development"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
     fb_app_id: 183463458351580
-    description: "The website of %{name_given} %{name_middle} %{name_family}, a web developer and designer in %{country} working for Storyful.com as CTO. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."
+    description: "The website of %{name_given} %{name_middle} %{name_family}, an internet product developer in %{country}. Former CTO of Storyful.com. Experienced in Ruby on Rails, AngularJS, HTML5, CSS3, Javascript and MySQL."
