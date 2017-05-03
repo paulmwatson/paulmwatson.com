@@ -8,14 +8,11 @@ s3_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 javascripts:
   common2:
     - public/javascripts/jquery-1.4.2.js
-    - public/javascripts/jquery.aw-showcase.min.js
     - public/javascripts/application.js
 
 stylesheets:
   base4:
     - public/stylesheets/reset.css
-    - public/stylesheets/showcase.css
-    - public/stylesheets/showcase-style-5.css
     - public/stylesheets/fonts.css
     - public/stylesheets/base.css
     - public/stylesheets/buttons.css

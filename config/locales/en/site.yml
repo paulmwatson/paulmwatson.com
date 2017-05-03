@@ -5,14 +5,14 @@ en:
     jabber: paul@paulmwatson.com
     twitter: paulmwatson
     skype: paulmwatson
-    phone: '353 86 896 8944'
+    phone: '27 61 328 0577'
     name_given: 'Paul'
     name_middle: 'M.'
     name_middle_full: 'Michael'
     name_family: 'Watson'
-    town: 'Dublin'
-    country: 'Ireland'
-    sub_title: "CTO @Storyful.com in %{country}"
+    town: 'Cape Town'
+    country: 'South Africa'
+    sub_title: "Internet Product Development"
     notice: 'I am redesigning this website, every change pushed live. Follow along on <a href="https://%{url}">github.com</a>.'
     fb_app_id: 183463458351580
-    description: "The website of %{name_given} %{name_middle} %{name_family}, a web developer and designer in %{country} working for Storyful.com as CTO. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and MySQL."
+    description: "The website of %{name_given} %{name_middle} %{name_family}, an internet product developer in %{country}. Former CTO of Storyful.com. Experienced in Ruby on Rails, HTML5, CSS3, Javascript and PostgreSQL."
