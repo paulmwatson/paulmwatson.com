@@ -25,9 +25,4 @@ namespace :heroku do
 
   end
 
-  # runs after all the deploys complete
-  task :after_deploy do
-    `jammit-s3`
-  end
-
 end

@@ -13,10 +13,16 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <%- if (Rails.env.production?) -%>
+    <%- if true || (Rails.env.production?) -%>
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
     <%- end -%>
-    <%= include_stylesheets :base4, :media => 'screen' %>
+    <%= stylesheet_link_tag 'reset', :media => 'screen' %>
+    <%= stylesheet_link_tag 'fonts', :media => 'screen' %>
+    <%= stylesheet_link_tag 'base', :media => 'screen' %>
+    <%= stylesheet_link_tag 'buttons', :media => 'screen' %>
+    <%= stylesheet_link_tag 'home', :media => 'screen' %>
+    <%= stylesheet_link_tag 'support', :media => 'screen' %>
+
     <%= csrf_meta_tag %>
 
   </head>
@@ -36,8 +42,9 @@
       </ul>
     </footer>
     <%- end -%>
-    <%= include_javascripts :common3 %>
-    <%- if (Rails.env.production?) -%>
+    <%= javascript_include_tag 'jquery-1.4.2.js' %>
+    <%= javascript_include_tag 'application' %>
+    <%- if true || (Rails.env.production?) -%>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-265441-2']);
