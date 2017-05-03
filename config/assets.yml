@@ -6,7 +6,7 @@ s3_access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
 s3_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 
 javascripts:
-  common2:
+  common3:
     - public/javascripts/jquery-1.4.2.js
     - public/javascripts/application.js
 
