@@ -4,8 +4,6 @@
     <meta name="description" content="<%= t :description, :scope => :site, :country => t(:country, :scope => [:site]), :name_given => t(:name_given, :scope => [:site]), :name_middle => t(:name_middle_full, :scope => [:site]), :name_family => t(:name_family, :scope => [:site]) %>">
     <meta charset="<%= Encoding.default_external.name %>">
 
-    <meta name="cdn" content="<%= asset_host %>">
-
     <link type="text/plain" rel="author" href="/humans.txt">
 
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -13,9 +11,7 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <%- if (Rails.env.production?) -%>
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
-    <%- end -%>
     <%= stylesheet_link_tag 'reset', :media => 'screen' %>
     <%= stylesheet_link_tag 'fonts', :media => 'screen' %>
     <%= stylesheet_link_tag 'base', :media => 'screen' %>
