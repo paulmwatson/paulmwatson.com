@@ -2,11 +2,11 @@
 	Development, Content and Design: Paul M. Watson
 	Contact: paul [at] paulmwatson.com
 	Twitter: @paulmwatson
-	From: Dublin, Ireland
+	From: Cape Town, South Africa
 
 /* SITE */
-	Last update: 2013/02/11
+	Last update: 2017/05/03
 	Language: English
 	Doctype: HTML5 with CSS3
 	Tools: Ruby on Rails
-	IDE: Sublime Text 2
+	IDE: Atom

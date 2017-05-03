@@ -4,7 +4,7 @@
   {
     background-color: #000;
   }
-  
+
   .notice
   {
     border-top-right-radius: 0;
@@ -22,12 +22,12 @@
   {
     font-size: 1.6em;
   }
-  
+
   article.about header p
   {
     font-size: 0.6em;
   }
-  
+
   article.about header .photo
   {
     height: 2.2em;
@@ -41,7 +41,7 @@
     margin-top: 1em;
     overflow: hidden;
   }
-  
+
   article.about section p
   {
     font-size: 0.8em;
@@ -54,23 +54,13 @@
     right: auto;
     text-align: center;
   }
-  
+
   article.about nav
   {
     position: relative;
   }
-  
-  article.about nav li:first-child
-  {
-    display: none;
-  }
 
-  #backstretch
-  {
-    opacity: 0.5;
-  }
-  
-  #backstretch-next, #backstretch-previous
+  article.about nav li:first-child
   {
     display: none;
   }
