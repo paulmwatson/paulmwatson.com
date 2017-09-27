@@ -1,11 +1,11 @@
 /* TEAM */
-	Development, Content and Design: Paul M. Watson
+	Development, Content and Design: Paul Watson
 	Contact: paul [at] paulmwatson.com
 	Twitter: @paulmwatson
 	From: Cape Town, South Africa
 
 /* SITE */
-	Last update: 2017/05/03
+	Last update: 2017/09/27
 	Language: English
 	Doctype: HTML5 with CSS3
 	Tools: Ruby on Rails

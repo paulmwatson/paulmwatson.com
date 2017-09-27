@@ -1,7 +1,7 @@
 BEGIN:VCARD
 VERSION:3.0
-N:<%= t :name_family, :scope => [:site] %>;<%= t :name_given, :scope => [:site] %>;<%= t :name_middle, :scope => [:site] %>;;
-FN:<%= t :name_given, :scope => [:site] %> <%= t :name_middle, :scope => [:site] %> <%= t :name_family, :scope => [:site] %>
+N:<%= t :name_family, :scope => [:site] %>;<%= t :name_given, :scope => [:site] %>;;
+FN:<%= t :name_given, :scope => [:site] %> <%= t :name_family, :scope => [:site] %>
 ORG:Storyful.com;
 EMAIL;type=INTERNET;type=WORK;type=pref:<%= t :email, :scope => [:site] %>
 TEL;type=CELL;type=pref:+<%= t :phone, :scope => [:site] %>
